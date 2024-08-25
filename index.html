@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B10-Assignment-3</title>
+    <!-- daisyUI and tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind css configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        secondary: 'rgb(73, 73, 73)',
+                        font_color: 'rgb(33, 33, 33)',
+                        body: 'rgb(115, 115, 115)  ',
+                        card: 'rgb(28, 28, 28)',
+                    },
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        image: "../assets/bg.jpg",
+                        call_to_action: "",
+                    },
+                },
+            },
+        }
+ </script>
+ <style>
+    .bg-image{
+        background-image: url(./assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .bg2-image{
+            background-image: url(./assets/home2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+ </style>
+</head>
+<body class="bg-[#F4F4F4]">
+    <header class="w-11/12 md:w-9/12 mx-auto mb-20">
+        <!-- navbar part start -->
+        <nav class="">
+            <div class="navbar ">
+                <div class="flex-1 space-x-1">
+                    <i class="fa-solid fa-arrow-right w-5 h-5 rounded-full items-center flex justify-center bg-primary -rotate-45 text-sm text-font_color"></i>
+                  <a class=" text-2xl font-bold text-font_color"> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#737373] font-semibold  mr-10">
+                    
+                      <li class="text-[#494949] font-bold "><a href="#">Home</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Blogs</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    
+                  </ul>
+                </div>
+                <div class=" gap-5 hidden lg:flex">
+                    <i class="fa-solid fa-cart-shopping w-8 h-8 bg-[#E9E9E9] flex justify-center items-center rounded-full"> </i>
+                    <i class="fa-solid fa-magnifying-glass w-8 h-8 bg-[#E9E9E9] flex justify-center items-center rounded-full"></i>
+                  <button class="px-4 py-3 flex justify-center items-center gap-1 rounded-2xl bg-primary text-[#1C1C1C] font-bold border-none">Book Consult <i class="fa-solid fa-arrow-right  text-[#FFFFFF] w-5 h-5 rounded-full items-center flex justify-center bg-black -rotate-45 "></i></button>
+                </div>
+                <div  class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" >
+                        <i class="fa-solid fa-bars text-xl w-8 h-8 bg-[#E9E9E9] rounded-full flex justify-center items-center text-font_color"></i>
+                    </div>
+                    <ul
+                     tabindex="0"
+                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-28 p-2 mr-20 shadow text-[#494949] font-bold right-0">
+                      <li class=""><a href="#">Home</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Blogs</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                  
+            </div>
+        </nav>
+        <!-- navbar part end -->
+
+         <!-- banner part start -->
+          <section>
+            <div class="flex flex-col justify-center items-center">
+                <!-- image section part -->
+                 <div class="">
+                    <img src="./assets/banner.png" alt="home">
+                 </div>
+                 <!-- text section part-->
+                  <div class="space-y-5 mt-5 text-center">
+                    <h1 class="text-2xl font-extrabold lg:text-6xl lg:font-bold text-font_color">A barn house of this design has a <br>striking appearance</h1>
+                    <p class=" text-sm font-semibold text-secondary">It is very beautiful design of the house. The design is arranged through th necessary <br> rooms and various extravagant designs within the house.</p>
+                    <div>
+                        <button class=" px-20 md:px-4 py-3 rounded-3xl  bg-[#ABEF5F80] font-bold text-font_color">View Details <i class="fa-solid fa-arrow-right w-5 h-5 rounded-full  bg-primary -rotate-45 text-sm"></i></button>
+                    </div>
+                  </div>
+            </div>
+          </section>
+          <!-- banner-section end -->
+        
+    </header>
